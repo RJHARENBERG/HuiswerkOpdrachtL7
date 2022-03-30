@@ -13,18 +13,18 @@
 */
 
 
-console.log(getEmailDomain("n.eeken@novi-education.nl"))
-console.log(getEmailDomain("t.mellink@novi.nl"))
-console.log(getEmailDomain("a.wiersma@outlook.com"))
+console.log(getEmailDomain("n.eeken@novi-education.nl"));
+console.log(getEmailDomain("t.mellink@novi.nl"));
+console.log(getEmailDomain("a.wiersma@outlook.com"));
 
 
 function getEmailDomain(emailAdres) {
 
-    let domeinnaam = []
+    let domeinnaam = [];
 
-    domeinnaam = emailAdres.split("@").reverse()
+    domeinnaam = emailAdres.split("@").reverse();
 
-    console.log(domeinnaam)
+    console.log(domeinnaam);
 
     return domeinnaam[0];
 }
@@ -42,7 +42,7 @@ function getEmailDomain(emailAdres) {
     [v] typeOfEmail("a.wiersma@outlook.com") geeft "Extern"
 */
 
-console.log("================opdracht2======================")
+console.log("================opdracht2======================");
 console.log(typeOfEmail("n.eeken@novi-education.nl"));
 console.log(typeOfEmail("t.mellink@novi.nl"));
 console.log(typeOfEmail("novi.nlaapjesk@outlook.com"));
@@ -50,19 +50,19 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 
 function typeOfEmail(emailAdres) {
 
-    let antwoord = ""
+    let antwoord = "";
 
     if (emailAdres.includes("novi-education")) {
 
-        antwoord = "Student"
+        antwoord = "Student";
     }
     if (emailAdres.includes("novi.nl")) {
 
-        antwoord = "Medewerker"
+        antwoord = "Medewerker";
     }
     if (emailAdres.includes("outlook.com")) {
 
-        antwoord = "Extern"
+        antwoord = "Extern";
     }
 
     return antwoord;
@@ -86,25 +86,25 @@ function typeOfEmail(emailAdres) {
     [v] checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
  */
 
-console.log("================opdracht3======================")
-console.log(checkEmailValidity("n.eeken@novi.nl"))
-console.log(checkEmailValidity("tessmellink@novi.nl"))
-console.log(checkEmailValidity("n.eekenanovi.nl"))
-console.log(checkEmailValidity("n.eeken@novinl."))
-console.log(checkEmailValidity("tessmellink@novi,nl"))
+console.log("================opdracht3======================");
+console.log(checkEmailValidity("n.eeken@novi.nl"));
+console.log(checkEmailValidity("tessmellink@novi.nl"));
+console.log(checkEmailValidity("n.eekenanovi.nl"));
+console.log(checkEmailValidity("n.eeken@novinl."));
+console.log(checkEmailValidity("tessmellink@novi,nl"));
 
 // && emailAdres.includes(",") && emailAdres.includes(".")
 
 function checkEmailValidity(emailAdres) {
 
-    let antwoord
-    let check = []
-    check = emailAdres.split("").reverse()
+    let antwoord;
+    let check = [];
+    check = emailAdres.split("").reverse();
 
     if (emailAdres.includes("@") && !emailAdres.includes(",") && check.indexOf(".", 0)) {
-        antwoord = true
+        antwoord = true;
     } else {
-        antwoord = false
+        antwoord = false;
     }
 
     // bekijk check array:
