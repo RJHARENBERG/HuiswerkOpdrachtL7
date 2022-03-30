@@ -23,8 +23,6 @@ function getEmailDomain(emailAdres) {
 
     domeinnaam = emailAdres.split("@").reverse();
 
-    console.log(domeinnaam);
-
     return domeinnaam[0];
 }
 
@@ -48,22 +46,16 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 
 function typeOfEmail(emailAdres) {
 
-    let antwoord = "";
+    emailAdres = getEmailDomain(emailAdres)
+    let answer = "Extern";
 
+    if (emailAdres.includes("novi")) {
+        answer = "Medewerker";
+    }
     if (emailAdres.includes("novi-education")) {
-
-        antwoord = "Student";
+        answer = "Student";
     }
-    if (emailAdres.includes("novi.nl")) {
-
-        antwoord = "Medewerker";
-    }
-    if (emailAdres.includes("outlook.com")) {
-
-        antwoord = "Extern";
-    }
-
-    return antwoord;
+    return answer;
 }
 
 /* Opdracht 3
@@ -91,18 +83,15 @@ console.log(checkEmailValidity("tessmellink@novi,nl"));
 
 function checkEmailValidity(emailAdres) {
 
-    let antwoord;
+    let answer;
     let check = [];
     check = emailAdres.split("").reverse();
 
     if (emailAdres.includes("@") && !emailAdres.includes(",") && check.indexOf(".", 0)) {
-        antwoord = true;
+        answer = true;
     } else {
-        antwoord = false;
+        answer = false;
     }
 
-    // bekijk check array:
-    // console.log(check)
-
-    return antwoord;
+    return answer;
 }

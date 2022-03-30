@@ -15,7 +15,7 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
         2. check of getal hoger of gelijk is aan 8.
         3. maak een variabelen "aantalCumLaude" aan die bij true mee telt
     [v] * Hoe zorg ik ervoor dat dit ook werkt wanneer de array 100 entries bevat?
-        1. door naam index < paremeter .lengt te gebruiken in de range van de for loop.
+        1. door naam index < parameter.lengt te gebruiken in de range van de for loop.
     [v] * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
         1. maak een variabelen "aantalCumLaude" aan die bij true mee telt
     [v] Log het antwoord in de terminal.
@@ -25,14 +25,14 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 function cumLaude(grades) {
 
-    let aantalCumLaude = 0;
+    let numberOfCumLaude = 0;
 
     for (let i = 0; i < grades.length; i++) {
         if (grades[i] >= 8) {
-            aantalCumLaude++;
+            numberOfCumLaude++;
         }
     }
-    return aantalCumLaude;
+    return numberOfCumLaude;
 }
 
 /*  1b: Omschrijven tot een herbruikbare functie
@@ -50,19 +50,19 @@ console.log(cumLaude(grades));
 console.log(cumLaude([6, 4, 5]));
 console.log(cumLaude([8, 9, 4, 6, 10]));
 
-/* Opdracht  2: Gemiddeld cijfer */
+/* Opdracht 2: Gemiddeld cijfer */
 
 /* 2a: Script schrijven
     [v] De studenten-administratie moet ieder blok opnieuw berekenen wat het gemiddelde eindcijfer is,
-    [v] maar we beginnen met de grades array van hierboven.
+    [v] Maar we beginnen met de grades array van hierboven.
     [v] Schrijf de stapjes om dit te kunnen berekenen eerst uit en vraag jezelf de volgende dingen af:
     [v] * Hoe wordt een gemiddelde berekend?
-        1. alles bij elkaar op tellen en dan deelen door het aantal cijfers
+        1. alles bij elkaar op tellen en dan delen door het aantal cijfers
     [v] * Wat moet ik verzamelen uit de array van cijfers om uiteindelijk een gemiddelde te kunnen berekenen?
-        1. variabele met alle cijvers op geteld
+        1. variabele met alle cijfers op geteld
         2. variabelen met het aantal indexen
     [v] * Hoe zorgt ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten?
-        1. foorloop met naam index < paremeter .lengt te gebruiken
+        1. for loop met naam index < parameter.lengt te gebruiken
     [v] Log het antwoord in de terminal.
 
         // ---- Verwachte uitkomst: 6.642857142857143
@@ -81,14 +81,14 @@ function averageGrade(grades) {
 }
 
 /* 2b: Omschrijven tot een herbruikbare functie
-    [] Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
-    [] Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
-    [] Log het antwoord in de terminal.
+    [v] Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
+    [v] Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
+    [v] Log het antwoord in de terminal.
 
            ---- Verwachte uitkomsten:
-    [] averageGrade(grades) geeft 6.642857142857143
-    [] averageGrade([6, 4, 5]) geeft xxxx
-    [] averageGrade([8, 9, 4, 6, 10]) geeft xxxx
+    [v] averageGrade(grades) geeft 6.642857142857143
+    [v] averageGrade([6, 4, 5]) geeft xxxx
+    [v] averageGrade([8, 9, 4, 6, 10]) geeft xxxx
 */
 
 console.log("===================antwoordt opdracht 2=========================");
@@ -98,7 +98,7 @@ console.log(averageGrade([8, 9, 4, 6, 10]));
 
 /* 2c: Afronden op twee decimalen
     [v] Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
-        1. toFixed() metode
+        1. toFixed() methode
     [v] Tip: Google is your best friend!
 */
 
