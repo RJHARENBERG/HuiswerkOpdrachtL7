@@ -134,8 +134,6 @@ function highestGrade(grades) {
     return highestNumber;
 }
 
-console.log(highestGrade(grades));
-
 /* 3b: Omschrijven tot een herbruikbare functie
     [v] Schrijf een functie genaamd highestGrade, die een array van cijfers verwacht (zoals grades) en het hoogste cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 3a.
     [v] Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
@@ -146,7 +144,7 @@ console.log(highestGrade(grades));
     [v] highestGrade([6, 4, 5]) geeft 6
     [v] highestGrade([8, 9, 4, 6, 10]) geeft 10
 */
-
+console.log("===================antwoordt opdracht 3=========================");
 console.log(highestGrade(grades));
 console.log(highestGrade([6, 4, 5]));
 console.log(highestGrade([8, 9, 4, 6, 10]));

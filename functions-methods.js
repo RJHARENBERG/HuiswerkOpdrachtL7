@@ -2,7 +2,7 @@
 // Je zult hier methoden van het String Object voor nodig hebben, dus pak de paragraaf op EdHub over het String Object er even bij.
 
 
-/* Opdracht  1
+/* Opdracht 1
     [v] Schrijf een functie genaamd getEmailDomain,
     [v] die een emailadres verwacht en de domeinnaam teruggeeft.
     [v] Een domeinnaam is hetgeen dat na het @ in het adres staat
@@ -12,7 +12,7 @@
     [v] getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 */
 
-
+console.log("================opdracht1======================");
 console.log(getEmailDomain("n.eeken@novi-education.nl"));
 console.log(getEmailDomain("t.mellink@novi.nl"));
 console.log(getEmailDomain("a.wiersma@outlook.com"));
