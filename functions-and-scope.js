@@ -9,22 +9,18 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 /* 1a: Script schrijven
     [v] De administratie moet weten hoeveel studenten er dit blok cum laude zijn afgestudeerd (8 of hoger).
             Daar moeten namelijk speciale diploma's voor besteld worden.
-
     [v] Schrijf de stapjes om dit te kunnen checken eerst uit en vraag jezelf de volgende dingen af:
     [v] * Hoe kan ik iedere waarde van de array checken op deze conditie?
         1. maak een for loop.
         2. check of getal hoger of gelijk is aan 8.
         3. maak een variabelen "aantalCumLaude" aan die bij true mee telt
-
-
     [v] * Hoe zorg ik ervoor dat dit ook werkt wanneer de array 100 entries bevat?
         1. door naam index < paremeter .lengt te gebruiken in de range van de for loop.
-
     [v] * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden?
         1. maak een variabelen "aantalCumLaude" aan die bij true mee telt
     [v] Log het antwoord in de terminal.
 
-    // ---- Verwachte uitkomst: 6
+        // ---- Verwachte uitkomst: 6
 */
 
 function cumLaude(grades) {
@@ -62,7 +58,6 @@ console.log(cumLaude([8, 9, 4, 6, 10]));
     [v] Schrijf de stapjes om dit te kunnen berekenen eerst uit en vraag jezelf de volgende dingen af:
     [v] * Hoe wordt een gemiddelde berekend?
         1. alles bij elkaar op tellen en dan deelen door het aantal cijfers
-
     [v] * Wat moet ik verzamelen uit de array van cijfers om uiteindelijk een gemiddelde te kunnen berekenen?
         1. variabele met alle cijvers op geteld
         2. variabelen met het aantal indexen
@@ -85,15 +80,16 @@ function averageGrade(grades) {
     return (totalAmountOfGrads / totalNumbersOfGrads).toFixed(2);
 }
 
-/* 2b: Omschrijven tot een herbruikbare functie */
-// Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
-// Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
-// Log het antwoord in de terminal.
+/* 2b: Omschrijven tot een herbruikbare functie
+    [] Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
+    [] Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
+    [] Log het antwoord in de terminal.
 
-// ---- Verwachte uitkomsten:
-// averageGrade(grades) geeft 6.642857142857143
-// averageGrade([6, 4, 5]) geeft xxxx
-// averageGrade([8, 9, 4, 6, 10]) geeft xxxx
+           ---- Verwachte uitkomsten:
+    [] averageGrade(grades) geeft 6.642857142857143
+    [] averageGrade([6, 4, 5]) geeft xxxx
+    [] averageGrade([8, 9, 4, 6, 10]) geeft xxxx
+*/
 
 console.log("===================antwoordt opdracht 2=========================");
 console.log(averageGrade(grades));
@@ -121,13 +117,12 @@ console.log(averageGrade([8, 9, 4, 6, 10]));
 
     ---- Verwachte uitkomst: 9
 */
-
 function highestGrade(grades) {
 
     let highestNumber = 0;
 
-    for (let i = 0 ; i < grades.length; i++){
-        if (grades[i] > highestNumber){
+    for (let i = 0; i < grades.length; i++) {
+        if (grades[i] > highestNumber) {
             highestNumber = grades[i];
         }
     }

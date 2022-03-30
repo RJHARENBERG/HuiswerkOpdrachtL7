@@ -17,7 +17,6 @@ console.log(getEmailDomain("n.eeken@novi-education.nl"));
 console.log(getEmailDomain("t.mellink@novi.nl"));
 console.log(getEmailDomain("a.wiersma@outlook.com"));
 
-
 function getEmailDomain(emailAdres) {
 
     let domeinnaam = [];
@@ -29,8 +28,7 @@ function getEmailDomain(emailAdres) {
     return domeinnaam[0];
 }
 
-
-/* Opdracht  2
+/* Opdracht 2
     [v] Schrijf een functie genaamd typeOfEmail, die een emailadres verwacht.
     [v] De functie checkt of het emailadres een novi domein heeft (medewerker),
     [v] een novi-education domein (student),
@@ -66,11 +64,9 @@ function typeOfEmail(emailAdres) {
     }
 
     return antwoord;
-
 }
 
-
-/* Opdracht  3
+/* Opdracht 3
     [v] Schrijf een functie genaamd checkEmailValidity,
     [V] die een emailadres verwacht en checkt of het emailadres valide is.
     [v] De functie returned true of false, afhankelijk van de uitkomst.
@@ -92,8 +88,6 @@ console.log(checkEmailValidity("tessmellink@novi.nl"));
 console.log(checkEmailValidity("n.eekenanovi.nl"));
 console.log(checkEmailValidity("n.eeken@novinl."));
 console.log(checkEmailValidity("tessmellink@novi,nl"));
-
-// && emailAdres.includes(",") && emailAdres.includes(".")
 
 function checkEmailValidity(emailAdres) {
 
