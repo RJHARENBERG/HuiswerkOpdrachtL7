@@ -83,15 +83,12 @@ console.log(checkEmailValidity("tessmellink@novi,nl"));
 
 function checkEmailValidity(emailAdres) {
 
-    let answer;
+    let answer = false;
     let check = [];
     check = emailAdres.split("").reverse();
 
     if (emailAdres.includes("@") && !emailAdres.includes(",") && check.indexOf(".", 0)) {
         answer = true;
-    } else {
-        answer = false;
     }
-
     return answer;
 }
