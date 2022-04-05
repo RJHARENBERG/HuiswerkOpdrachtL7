@@ -47,15 +47,13 @@ console.log(typeOfEmail("a.wiersma@outlook.com"));
 function typeOfEmail(emailAdres) {
 
     emailAdres = getEmailDomain(emailAdres)
-    let answer = "Extern";
-
-    if (emailAdres.includes("novi")) {
-        answer = "Medewerker";
-    }
     if (emailAdres.includes("novi-education")) {
-        answer = "Student";
+        return  "Student";
     }
-    return answer;
+    if (emailAdres.includes("novi")) {
+        return "Medewerker";
+    }
+    return "Extern";
 }
 
 /* Opdracht 3

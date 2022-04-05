@@ -74,7 +74,7 @@ function averageGrade(grades) {
     let totalNumbersOfGrads = 0;
 
     for (let i = 0; i < grades.length; i++) {
-        totalAmountOfGrads = grades[i] + totalAmountOfGrads;
+        totalAmountOfGrads += grades[i];
         totalNumbersOfGrads++;
     }
     return (totalAmountOfGrads / totalNumbersOfGrads).toFixed(2);
